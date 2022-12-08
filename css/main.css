@@ -7,7 +7,24 @@
     url('../fonts/montserrat-v25-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
     url('../fonts/montserrat-v25-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+:root{
+    --bg-header:#8F0365;
+    --clr-header:#fff;
+    --bg-header-bottom:#FFDCF5;
+    --clr-header-bottom:#000;
+}
+.dark{
+    --bg-header:#000;
+    --clr-header:#fff;
+    --bg-header-bottom:lightblue;
+    --clr-header-bottom:indigo;
+}
+.mood-link{
+    color: red;
+}
+.light{
+    color: #fff;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +43,7 @@ body{
 }
 
 .site-header{
-    background-color: #8F0365;
+    background-color: var(--bg-header);
 }
 .header__inner{
     padding: 20px 0;
@@ -41,8 +58,7 @@ body{
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
-    
-    color: #FFFFFF;
+    color: var(--clr-header);
 }
 .header__tel, .header__day{
     font-weight: 500;
@@ -51,14 +67,14 @@ body{
     /* identical to box height */
     
     
-    color: #FFFFFF;
+    color: var(--clr-header);
 }
 .header__networks{
     display: flex;
     gap: 60px;
 }
 .header__bottom{
-    background: #FFDCF5;
+    background: var(--bg-header-bottom);
 }
 .header__bottom{
     padding: 32px 0 48px;
@@ -78,5 +94,5 @@ body{
     /* identical to box height */
     
     
-    color: #000000;
+    color:var(--clr-header-bottom) ;
 }
